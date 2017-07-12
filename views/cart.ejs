@@ -1,0 +1,46 @@
+<% include header.ejs %>
+<% include topmenu.ejs %>
+<style type="text/css">
+	#table{
+		width: 100% ; overflow-x: auto;
+	}
+</style>
+<div id="wrapper" class="container">
+			<section class="main-content">				
+				<div class="row">
+					<div class="span9">					
+						<h4 class="title"><span class="text"><strong>Your</strong> Cart</span></h4>
+						<div id="root"></div>
+						<hr>
+						<p class="buttons center">				
+							<a href="/payment" class="btn btn-warning">Check and payment</a>
+							<a href="/" class="btn btn-default">Back home</a>
+						</p>					
+					</div>
+					<div class="span3 col">
+						<div class="block">	
+							<ul class="nav nav-list">
+								<li class="nav-header">SUB CATEGORIES</li>
+								<li><a href="#">Nullam semper elementum</a></li>
+								<li class="active"><a href="#">Phasellus ultricies</a></li>
+								<li><a href="#">Donec laoreet dui</a></li>
+								<li><a href="#">Nullam semper elementum</a></li>
+								<li><a href="#">Phasellus ultricies</a></li>
+								<li><a href="#">Donec laoreet dui</a></li>
+							</ul>
+							<br/>
+							<ul class="nav nav-list below">
+								<li class="nav-header">MANUFACTURES</li>
+								<li><a href="#">Adidas</a></li>
+								<li><a href="#">Nike</a></li>
+								<li><a href="#">Dunlop</a></li>
+								<li><a href="#">Yamaha</a></li>
+							</ul>
+						</div>					
+					</div>
+				</div>
+			</section>			
+		</div>
+		
+		<script type = "text/babel" src="react/cart.js"></script>
+		<% include footer.ejs %>

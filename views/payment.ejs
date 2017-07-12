@@ -1,0 +1,90 @@
+<% include header.ejs %>
+<% include topmenu.ejs %>
+<style type="text/css">
+	#table{
+		width: 100% ; overflow-x: auto;
+	}
+	#form-left{
+		width: 50%;float: left;
+	}
+	#form-right{
+		width: 50% ; float: right;
+	}
+	#comment{
+		width: 100%;
+	}
+	.center{
+		float: right !important;
+	}
+	#caterories{
+		display: block; float: left;
+	}
+</style>
+<div id="wrapper" class="container">
+	<section class="main-content">				
+		<div class="row">
+			<div class="span9">					
+				<h4 class="title"><span class="text"><strong>Payment </strong> Your order</span></h4>
+				<div id="root"></div>
+				<form>
+					<h3 style="color: #eb4800">Payment</h3>
+					<h4>Customer information</h4>
+					<div id="form-left">
+						<div class="form-group">
+						<label for="name">First and last name <span style="color: red">*</span></label>
+						<input type="text" class="form-control" placeholder="First and last name ..." required>
+					</div>
+					<div class="form-group">
+						<label for="address">Address <span style="color: red">*</span></label>
+						<input type="text" class="form-control" placeholder="Address ..." required>
+					</div>
+					<div class="form-group">
+						<label for="phone">Phone number <span style="color: red">*</span></label>
+						<input type="number" min="0" max="99999999999" class="form-control" placeholder="Phone number ..." required>
+					</div>
+					<div class="form-group">
+						<label for="email">Email </label>
+						<input type="email" class="form-control" placeholder="Email ...">
+					</div>
+					</div>
+					<div id="form-right">
+						<div class="form-group">
+						<label for="comment">Comment</label>
+						<textarea rows="5" cols="10" class="form-control" id="comment"></textarea>
+					</div>
+					</div>
+					
+<p class="buttons center">				
+					<button class="btn btn-warning" type="submit">Payment</button>
+					<a href="/" class="btn btn-default">Back home</a>
+				</p>
+				</form>
+									
+			</div>
+			<div class="span3 col" id="caterories">
+				<div class="block">	
+					<ul class="nav nav-list">
+						<li class="nav-header">SUB CATEGORIES</li>
+						<li><a href="#">Nullam semper elementum</a></li>
+						<li class="active"><a href="#">Phasellus ultricies</a></li>
+						<li><a href="#">Donec laoreet dui</a></li>
+						<li><a href="#">Nullam semper elementum</a></li>
+						<li><a href="#">Phasellus ultricies</a></li>
+						<li><a href="#">Donec laoreet dui</a></li>
+					</ul>
+					<br/>
+					<ul class="nav nav-list below">
+						<li class="nav-header">MANUFACTURES</li>
+						<li><a href="#">Adidas</a></li>
+						<li><a href="#">Nike</a></li>
+						<li><a href="#">Dunlop</a></li>
+						<li><a href="#">Yamaha</a></li>
+					</ul>
+				</div>					
+			</div>
+		</div>
+	</section>
+</div>
+
+<script type = "text/babel" src="react/payment.js"></script>
+<% include footer.ejs %>
